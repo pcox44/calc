@@ -156,41 +156,41 @@ footer {
 ================================================== */
 
 /* --------------------------------------------------
-   HOMEPAGE — Red Header, Blue/Yellow/White Nav
+   HOMEPAGE — Soft Red Header, Soft Blue/Yellow/White Nav
 -------------------------------------------------- */
-.theme-mondrian header h1 { background-color: #ff6b6b; } /* soft red */
-.theme-mondrian nav li:nth-child(1) a { background-color: #4dabf7; color:#fff; } /* soft blue */
-.theme-mondrian nav li:nth-child(2) a { background-color: #ffe066; color:#000; } /* soft yellow */
-.theme-mondrian nav li:nth-child(3) a { background-color: #fff; color:#000; } /* white */
+.theme-mondrian header h1 { background-color: #ff7f7f; } /* softer red */
+.theme-mondrian nav li:nth-child(1) a { background-color: #6ea8fe; color:#fff; } /* softer blue */
+.theme-mondrian nav li:nth-child(2) a { background-color: #fff3a0; color:#000; } /* softer yellow */
+.theme-mondrian nav li:nth-child(3) a { background-color: #ffffff; color:#000; } /* white */
 
-h2.theme-mondrian::before { background-color: #ff6b6b; border-right: 4px solid #000; }
-h2.theme-mondrian::after  { background-color: #4dabf7; border-top: 4px solid #000; }
-table.theme-mondrian thead { background-color: #ffe066; }
+h2.theme-mondrian::before { background-color: #ff7f7f; border-right: 4px solid #000; }
+h2.theme-mondrian::after  { background-color: #6ea8fe; border-top: 4px solid #000; }
+table.theme-mondrian thead { background-color: #fff3a0; }
 
-footer.theme-mondrian { background-color: #4dabf7; color: #fff; }
+footer.theme-mondrian { background-color: #6ea8fe; color: #fff; }
 
 /* --------------------------------------------------
-   AB PAGE — Soft Yellow Mondrian Theme
+   AB PAGE — Soft Yellow Header Theme
 -------------------------------------------------- */
-.theme-ab-mondrian header h1 { background-color: #ffe066; color: #000; } /* soft yellow */
-.theme-ab-mondrian nav li:nth-child(1) a { background-color: #ff6b6b; color:#fff; } /* soft red */
-.theme-ab-mondrian nav li:nth-child(2) a { background-color: #4dabf7; color:#fff; } /* soft blue */
-.theme-ab-mondrian nav li:nth-child(3) a { background-color: #fff; color:#000; } /* white */
+.theme-ab-mondrian header h1 { background-color: #fff3a0; color: #000; } /* yellow header */
+.theme-ab-mondrian nav li:nth-child(1) a { background-color: #ff9b9b; color:#fff; } /* soft red */
+.theme-ab-mondrian nav li:nth-child(2) a { background-color: #80c1ff; color:#fff; } /* soft blue */
+.theme-ab-mondrian nav li:nth-child(3) a { background-color: #ffffff; color:#000; } /* white */
 
-h2.theme-ab-mondrian::before { background-color: #ff6b6b; border-right: 4px solid #000; }
-h2.theme-ab-mondrian::after  { background-color: #4dabf7; border-top: 4px solid #000; }
-table.theme-ab-mondrian thead { background-color: #ffe066; }
-footer.theme-ab-mondrian { background-color: #ffe066; color: #000; }
+h2.theme-ab-mondrian::before { background-color: #ff9b9b; border-right: 4px solid #000; }
+h2.theme-ab-mondrian::after  { background-color: #80c1ff; border-top: 4px solid #000; }
+table.theme-ab-mondrian thead { background-color: #fff3a0; }
+footer.theme-ab-mondrian { background-color: #fff3a0; color: #000; }
 
 /* --------------------------------------------------
-   BC PAGE — Soft Blue Mondrian Theme
+   BC PAGE — Soft Blue Header Theme
 -------------------------------------------------- */
-.theme-bc-mondrian header h1 { background-color: #4dabf7; color: #fff; } /* soft blue */
-.theme-bc-mondrian nav li:nth-child(1) a { background-color: #ffe066; color:#000; } /* soft yellow */
-.theme-bc-mondrian nav li:nth-child(2) a { background-color: #ff6b6b; color:#fff; } /* soft red */
-.theme-bc-mondrian nav li:nth-child(3) a { background-color: #fff; color:#000; } /* white */
+.theme-bc-mondrian header h1 { background-color: #6ea8fe; color: #fff; } /* blue header */
+.theme-bc-mondrian nav li:nth-child(1) a { background-color: #fff3a0; color:#000; } /* soft yellow */
+.theme-bc-mondrian nav li:nth-child(2) a { background-color: #ff9b9b; color:#fff; } /* soft red */
+.theme-bc-mondrian nav li:nth-child(3) a { background-color: #ffffff; color:#000; } /* white */
 
-h2.theme-bc-mondrian::before { background-color: #ff6b6b; border-right: 4px solid #000; }
-h2.theme-bc-mondrian::after  { background-color: #ffe066; border-top: 4px solid #000; }
-table.theme-bc-mondrian thead { background-color: #4dabf7; color: #fff; }
-footer.theme-bc-mondrian { background-color: #4dabf7; color: #fff; }
+h2.theme-bc-mondrian::before { background-color: #ff9b9b; border-right: 4px solid #000; }
+h2.theme-bc-mondrian::after  { background-color: #fff3a0; border-top: 4px solid #000; }
+table.theme-bc-mondrian thead { background-color: #6ea8fe; color: #fff; }
+footer.theme-bc-mondrian { background-color: #6ea8fe; color: #fff; }
