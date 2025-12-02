@@ -158,11 +158,8 @@ footer {
 /* --------------------------------------------------
    HOMEPAGE — Bold Mondrian Colors
 -------------------------------------------------- */
-/* --------------------------------------------------
-   HOMEPAGE — True Bold Mondrian Colors
--------------------------------------------------- */
 .theme-mondrian header {
-  border: 12px solid #000; /* big bold black lines */
+  border: 12px solid #000; /* bold black lines */
 }
 
 .theme-mondrian header h1 {
@@ -171,19 +168,15 @@ footer {
   border-bottom: 12px solid #000;
 }
 
-.theme-mondrian nav ul {
-  grid-template-columns: repeat(3, 1fr);
-}
-
 .theme-mondrian nav li a {
   display: block;
   font-weight: 700;
   text-align: center;
   padding: 2rem 0;
-  border: 12px solid #000; /* big black lines between buttons */
+  border: 12px solid #000; /* thick black lines */
   text-decoration: none;
-  transition: 0.2s ease;
   font-size: 1.2rem;
+  transition: 0.2s ease;
 }
 
 /* Primary colors for the three buttons */
@@ -195,23 +188,18 @@ footer {
   filter: brightness(1.1);
 }
 
-/* Footer */
 footer.theme-mondrian {
-  background-color: #0047ab; /* bold blue */
+  background-color: #0047ab; /* blue */
   color: #fff;
   border-top: 12px solid #000;
 }
 
-/* H2 accents (if any section headings) */
 h2.theme-mondrian::before { background-color: #ff0000; border-right: 8px solid #000; }
 h2.theme-mondrian::after  { background-color: #0047ab; border-top: 8px solid #000; }
-
-/* Table headers (if used) */
 table.theme-mondrian thead { background-color: #ffd700; }
 
-
 /* --------------------------------------------------
-   AB PAGE — Soft Green Theme
+   AB PAGE — Soft Green Theme (original style)
 -------------------------------------------------- */
 .theme-ab header {
   background-color: #8ce99a; /* soft green */
@@ -244,7 +232,7 @@ table.theme-mondrian thead { background-color: #ffd700; }
 }
 
 /* --------------------------------------------------
-   BC PAGE — Soft Blue Theme
+   BC PAGE — Soft Blue Theme (original style)
 -------------------------------------------------- */
 .theme-bc header {
   background-color: #a5d8ff; /* soft blue */
