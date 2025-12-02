@@ -1,15 +1,19 @@
-/* Reset */
+/* --------------------------------------------------
+   RESET
+-------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
+/* --------------------------------------------------
+   BASE BODY
+-------------------------------------------------- */
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #fdf6f0; /* soft cream */
+  background-color: #fdf6f0;
   color: #333;
 }
 
@@ -21,7 +25,9 @@ body {
   padding: 1rem;
 }
 
-/* Header */
+/* --------------------------------------------------
+   HEADER
+-------------------------------------------------- */
 header {
   background-color: #a5d8ff;
   color: #fff;
@@ -37,7 +43,9 @@ header h1 {
   font-weight: 700;
 }
 
-/* Navigation */
+/* --------------------------------------------------
+   NAVIGATION
+-------------------------------------------------- */
 nav ul {
   list-style: none;
   display: flex;
@@ -61,7 +69,9 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* Section headings */
+/* --------------------------------------------------
+   SECTION HEADINGS
+-------------------------------------------------- */
 h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -71,14 +81,16 @@ h2 {
   padding-left: 0.5rem;
 }
 
-/* Tables */
+/* --------------------------------------------------
+   TABLES
+-------------------------------------------------- */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 2rem;
   background-color: #ffffff;
   border: 1px solid #dee2e6;
-  table-layout: auto; /* ensures all cells stay visible */
+  table-layout: auto;
 }
 
 thead {
@@ -120,7 +132,9 @@ table a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
 footer {
   text-align: center;
   padding: 1.5rem;
@@ -130,9 +144,163 @@ footer {
   font-weight: 500;
 }
 
-/* Remove responsive table stacking */
+/* --------------------------------------------------
+   MOBILE FIX
+-------------------------------------------------- */
 @media (max-width: 768px) {
   table, thead, tbody, th, td, tr {
     display: table;
   }
+}
+
+/* ==================================================
+   THEMES
+   Add the theme class to <body>:
+   <body class="theme-ab">  or  theme-bc (default) or theme-mondrian
+================================================== */
+
+
+/* --------------------------------------------------
+   AB THEME — Green
+-------------------------------------------------- */
+
+.theme-ab header {
+  background-color: #8ce99a;
+}
+
+.theme-ab nav a {
+  background-color: #40c057;
+}
+
+.theme-ab nav a:hover {
+  background-color: #69db7c;
+}
+
+.theme-ab h2 {
+  border-left-color: #69db7c;
+}
+
+.theme-ab thead {
+  background-color: #b2f2bb;
+}
+
+.theme-ab tbody tr:hover {
+  background-color: #e6fcf5;
+}
+
+.theme-ab table a {
+  color: #2f9e44;
+}
+
+.theme-ab table a:hover {
+  color: #1b7a35;
+}
+
+.theme-ab footer {
+  background-color: #8ce99a;
+}
+
+
+
+/* --------------------------------------------------
+   BC THEME — Blue
+-------------------------------------------------- */
+
+.theme-bc header {
+  background-color: #a5d8ff;
+}
+
+.theme-bc nav a {
+  background-color: #339af0;
+}
+
+.theme-bc nav a:hover {
+  background-color: #74c0fc;
+}
+
+.theme-bc h2 {
+  border-left-color: #74c0fc;
+}
+
+.theme-bc tbody tr:hover {
+  background-color: #e7f5ff;
+}
+
+.theme-bc table a {
+  color: #339af0;
+}
+
+.theme-bc table a:hover {
+  color: #1c7ed6;
+}
+
+.theme-bc footer {
+  background-color: #a5d8ff;
+}
+
+
+
+/* --------------------------------------------------
+   HOMEPAGE THEME — Mondrian Style
+-------------------------------------------------- */
+
+.theme-mondrian body {
+  background-color: #fffdfa;
+}
+
+/* Mondrian header: strong red, thick black border */
+.theme-mondrian header {
+  background-color: #ff0000;
+  border: 6px solid #000;
+  border-radius: 0;
+}
+
+.theme-mondrian nav a {
+  background-color: #0047ab;
+  border: 4px solid #000;
+  padding: 0.7rem 1.4rem;
+}
+
+.theme-mondrian nav a:hover {
+  background-color: #ffd700;
+}
+
+.theme-mondrian h2 {
+  color: #000;
+  border-left: 10px solid #000;
+  background: linear-gradient(
+    to right,
+    #ff0000 0 20%,
+    #fff 20% 60%,
+    #0047ab 60% 100%
+  );
+  padding: 0.5rem 1rem;
+}
+
+.theme-mondrian table {
+  border: 4px solid #000;
+}
+
+.theme-mondrian thead {
+  background-color: #ffd700;
+  border-bottom: 4px solid #000;
+}
+
+.theme-mondrian tbody tr:hover {
+  background-color: #e6e6e6;
+}
+
+.theme-mondrian table a {
+  color: #0047ab;
+  font-weight: bold;
+}
+
+.theme-mondrian table a:hover {
+  color: #ff0000;
+}
+
+.theme-mondrian footer {
+  background-color: #0047ab;
+  border-top: 6px solid #000;
+  border-radius: 0;
 }
