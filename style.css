@@ -8,8 +8,8 @@
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #fdf6f0; /* soft cream */
-  color: #333; /* dark gray text for readability */
+  background-color: #fdf6f0; /* default neutral, overridden per page */
+  color: #333;
 }
 
 /* Container */
@@ -20,52 +20,12 @@ body {
   padding: 1rem;
 }
 
-/* Header */
-header {
-  background: #a5d8ff; /* soft blue */
-  color: #fff;
-  padding: 1.5rem 0;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-header h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  background-color: #339af0; /* slightly darker pastel blue */
-}
-
-nav a:hover {
-  background-color: #74c0fc;
-  transform: scale(1.05);
-}
-
 /* Section headings */
 h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  color: #495057;
   font-size: 1.8rem;
-  border-left: 6px solid #74c0fc;
+  border-left: 6px solid;
   padding-left: 0.5rem;
 }
 
@@ -80,11 +40,6 @@ table {
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
-thead {
-  background-color: #ffe066; /* pastel yellow */
-  color: #495057;
-}
-
 thead th {
   padding: 1rem;
   font-weight: 600;
@@ -97,7 +52,7 @@ tbody tr {
 }
 
 tbody tr:hover {
-  background-color: #e7f5ff; /* soft pastel blue hover */
+  background-color: rgba(0,0,0,0.03);
 }
 
 tbody td {
@@ -107,12 +62,11 @@ tbody td {
 /* Links inside tables */
 table a {
   text-decoration: none;
-  color: #339af0; /* pastel blue links */
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 table a:hover {
-  color: #1c7ed6;
   text-decoration: underline;
 }
 
@@ -120,40 +74,29 @@ table a:hover {
 footer {
   text-align: center;
   padding: 1.5rem;
-  background-color: #a5d8ff; /* match header */
-  color: #fff;
-  border-radius: 15px 15px 0 0;
   font-weight: 500;
+  border-radius: 15px 15px 0 0;
 }
 
 /* Responsive tables */
 @media (max-width: 768px) {
-  table, thead, tbody, th, td, tr {
-    display: block;
-  }
-
-  thead {
-    display: none;
-  }
-
+  table, thead, tbody, th, td, tr { display: block; }
+  thead { display: none; }
   tbody tr {
     margin-bottom: 1rem;
     border: 1px solid #dee2e6;
     border-radius: 8px;
     padding: 0.5rem;
   }
-
   tbody td {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
     border: none;
   }
-
   tbody td::before {
     content: attr(data-label);
     font-weight: 600;
-    color: #495057;
     margin-right: 0.5rem;
   }
 }
