@@ -194,3 +194,73 @@ h2.theme-bc-mondrian::before { background-color: #ff9b9b; border-right: 4px soli
 h2.theme-bc-mondrian::after  { background-color: #fff3a0; border-top: 4px solid #000; }
 table.theme-bc-mondrian thead { background-color: #6ea8fe; color: #fff; }
 footer.theme-bc-mondrian { background-color: #6ea8fe; color: #fff; }
+
+/* ==================================================
+   THEMES — Soft AB and BC Colors (Original Style)
+================================================== */
+
+/* --------------------------------------------------
+   AB PAGE — Soft Green Theme
+-------------------------------------------------- */
+.theme-ab header {
+  background-color: #8ce99a; /* soft green */
+}
+.theme-ab nav a {
+  background-color: #40c057; /* green nav buttons */
+  color: #fff;
+}
+.theme-ab nav a:hover {
+  background-color: #69db7c;
+}
+.theme-ab h2 {
+  border-left: 6px solid #69db7c;
+}
+.theme-ab thead {
+  background-color: #b2f2bb;
+}
+.theme-ab tbody tr:hover {
+  background-color: #e6fcf5;
+}
+.theme-ab table a {
+  color: #2f9e44;
+}
+.theme-ab table a:hover {
+  color: #1b7a35;
+}
+.theme-ab footer {
+  background-color: #8ce99a;
+  color: #000;
+}
+
+/* --------------------------------------------------
+   BC PAGE — Soft Blue Theme
+-------------------------------------------------- */
+.theme-bc header {
+  background-color: #a5d8ff; /* soft blue */
+}
+.theme-bc nav a {
+  background-color: #339af0; /* blue nav buttons */
+  color: #fff;
+}
+.theme-bc nav a:hover {
+  background-color: #74c0fc;
+}
+.theme-bc h2 {
+  border-left: 6px solid #74c0fc;
+}
+.theme-bc thead {
+  background-color: #e7f5ff;
+}
+.theme-bc tbody tr:hover {
+  background-color: #d0ebff;
+}
+.theme-bc table a {
+  color: #339af0;
+}
+.theme-bc table a:hover {
+  color: #1c7ed6;
+}
+.theme-bc footer {
+  background-color: #a5d8ff;
+  color: #000;
+}
