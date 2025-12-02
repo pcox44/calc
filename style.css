@@ -6,10 +6,10 @@
 }
 
 body {
-  font-family: 'Courier New', monospace;
-  background-color: #000; /* black background */
-  color: #00ff00; /* neon green text */
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
+  background-color: #fdf6f0; /* soft cream */
+  color: #333; /* dark gray text for readability */
 }
 
 /* Container */
@@ -17,21 +17,23 @@ body {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 /* Header */
 header {
-  background-color: #000;
-  color: #00ff00;
+  background: #a5d8ff; /* soft blue */
+  color: #fff;
   padding: 1.5rem 0;
-  border-bottom: 2px solid #00ff00;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 header h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  text-shadow: 0 0 10px #00ff00;
+  font-weight: 700;
 }
 
 nav ul {
@@ -43,73 +45,85 @@ nav ul {
 }
 
 nav a {
-  color: #00ff00;
+  color: #fff;
   text-decoration: none;
   padding: 0.6rem 1.2rem;
-  border: 1px solid #00ff00;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-weight: 600;
   transition: all 0.3s ease;
+  background-color: #339af0; /* slightly darker pastel blue */
 }
 
 nav a:hover {
-  background-color: #00ff00;
-  color: #000;
-  box-shadow: 0 0 10px #00ff00;
+  background-color: #74c0fc;
+  transform: scale(1.05);
+}
+
+/* Section headings */
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #495057;
+  font-size: 1.8rem;
+  border-left: 6px solid #74c0fc;
+  padding-left: 0.5rem;
 }
 
 /* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 2rem 0;
-  background-color: #000;
-  border: 1px solid #00ff00;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 thead {
-  background-color: #000;
-  color: #00ff00;
-  text-align: left;
+  background-color: #ffe066; /* pastel yellow */
+  color: #495057;
 }
 
 thead th {
   padding: 1rem;
-  font-weight: 700;
-  border: 1px solid #00ff00;
-  text-shadow: 0 0 5px #00ff00;
+  font-weight: 600;
+  border-bottom: 1px solid #dee2e6;
 }
 
 tbody tr {
-  border-bottom: 1px solid #00ff00;
+  border-bottom: 1px solid #dee2e6;
+  transition: background 0.3s ease;
+}
+
+tbody tr:hover {
+  background-color: #e7f5ff; /* soft pastel blue hover */
 }
 
 tbody td {
   padding: 0.8rem 1rem;
-  border: 1px solid #00ff00;
-}
-
-tbody tr:hover {
-  background-color: #003300; /* subtle dark green on hover */
 }
 
 /* Links inside tables */
 table a {
-  color: #00ff00;
   text-decoration: none;
+  color: #339af0; /* pastel blue links */
+  font-weight: 500;
 }
 
 table a:hover {
-  color: #00ff00;
-  text-shadow: 0 0 5px #00ff00;
+  color: #1c7ed6;
+  text-decoration: underline;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 1.5rem;
-  background-color: #000;
-  color: #00ff00;
-  border-top: 2px solid #00ff00;
+  background-color: #a5d8ff; /* match header */
+  color: #fff;
+  border-radius: 15px 15px 0 0;
+  font-weight: 500;
 }
 
 /* Responsive tables */
@@ -117,29 +131,29 @@ footer {
   table, thead, tbody, th, td, tr {
     display: block;
   }
-  
+
   thead {
     display: none;
   }
-  
+
   tbody tr {
     margin-bottom: 1rem;
-    border: 1px solid #00ff00;
-    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
     padding: 0.5rem;
   }
-  
+
   tbody td {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
     border: none;
   }
-  
+
   tbody td::before {
     content: attr(data-label);
-    font-weight: 700;
-    color: #00ff00;
+    font-weight: 600;
+    color: #495057;
     margin-right: 0.5rem;
   }
 }
