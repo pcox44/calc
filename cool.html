@@ -16,25 +16,19 @@
       padding: 0;
     }
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 1rem 0;
-    }
-
     /* ---------- Header ---------- */
     header {
       background-color: #d64541;
       color: #fff;
-      padding: 2rem 0 1rem 0;
+      padding: 2rem 0;
       text-align: center;
       margin-bottom: 2rem;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      width: 100%;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-weight: 700;
       margin: 0;
       padding-bottom: 0.3rem;
@@ -69,7 +63,7 @@
       color: #d64541;
       text-align: center;
       margin-bottom: 2rem;
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: 600;
     }
 
@@ -100,27 +94,20 @@
     .card h3 {
       margin-bottom: 0.5rem;
       color: #d64541;
+      font-size: 1.2rem;
     }
 
     .card p {
       font-size: 0.95rem;
-      margin-bottom: 1rem;
-      min-height: 40px;
+      margin: 0;
+      min-height: 50px;
     }
 
-    a.btn {
-      display: inline-block;
-      padding: 0.6rem 1.2rem;
-      background-color: #d64541;
-      color: #fff;
+    .card a {
       text-decoration: none;
-      font-weight: 600;
-      border-radius: 6px;
-      transition: background-color 0.3s;
-    }
-
-    a.btn:hover {
-      background-color: #a73630;
+      color: inherit;
+      display: block;
+      margin-bottom: 0.5rem;
     }
 
     /* ---------- Responsive Styles ---------- */
@@ -132,7 +119,7 @@
 
     @media (max-width: 480px) {
       header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
       .card {
         max-width: 100%;
@@ -149,65 +136,54 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>Cool Math Stuff</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="ab.html">AP Calculus AB</a></li>
-          <li><a href="bc.html">AP Calculus BC</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>Cool Math Stuff</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ab.html">AP Calculus AB</a></li>
+        <li><a href="bc.html">AP Calculus BC</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="container">
     <h2>Fun Math Projects</h2>
     <section class="projects">
       <div class="card">
-        <h3>Qu0x</h3>
-        <p>A number game where you use 5 numbers and operations to make a target number.</p>
-        <a href="https://qu0x.com" class="btn" target="_blank">Open Project</a>
+        <a href="https://qu0x.com" target="_blank"><h3>Qu0x</h3></a>
+        <p>Use 5 numbers and math operations to reach a target number.</p>
       </div>
       <div class="card">
-        <h3>Stick Simulation</h3>
-        <p>Simulation to show the expected number of draws on a uniform distribution to reach a target sum.</p>
-        <a href="https://pcox44.github.io/uniform-sum" class="btn" target="_blank">Open Project</a>
+        <a href="https://pcox44.github.io/uniform-sum" target="_blank"><h3>Stick Simulation</h3></a>
+        <p>Explore expected draws to reach a target sum with a uniform distribution.</p>
       </div>
       <div class="card">
-        <h3>Ants on Polygons</h3>
-        <p>Simulation to model a random walk on a closed circuit.</p>
-        <a href="https://pcox44.github.io/ants" class="btn" target="_blank">Open Project</a>
+        <a href="https://pcox44.github.io/ants" target="_blank"><h3>Ants on Polygons</h3></a>
+        <p>Random walk simulation on a closed polygonal path.</p>
       </div>
       <div class="card">
-        <h3>Schur Colorings</h3>
-        <p>Game to try to maximize Schur numbers.</p>
-        <a href="https://pcox44.github.io/schur" class="btn" target="_blank">Open Project</a>
+        <a href="https://pcox44.github.io/schur" target="_blank"><h3>Schur Colorings</h3></a>
+        <p>Try to maximize Schur numbers through coloring strategies.</p>
       </div>
       <div class="card">
-        <h3>Picking a Porta-Potty</h3>
-        <p>Simulation for the secretary problem with a changed context.</p>
-        <a href="https://pcox44.github.io/porta-potty" class="btn" target="_blank">Open Project</a>
+        <a href="https://pcox44.github.io/porta-potty" target="_blank"><h3>Picking a Porta-Potty</h3></a>
+        <p>Apply the secretary problem concept in a fun new context.</p>
       </div>
       <div class="card">
-        <h3>Catching All Pokemon</h3>
-        <p>The Coupon Collector Problem simulator, but with Pokemon.</p>
-        <a href="https://pcox44.github.io/pokemon" class="btn" target="_blank">Open Project</a>
+        <a href="https://pcox44.github.io/pokemon" target="_blank"><h3>Catching All Pokemon</h3></a>
+        <p>A Coupon Collector Problem simulation themed with Pokemon.</p>
       </div>
       <div class="card">
-        <h3>Buffon's Needle</h3>
-        <p>Simulation to show pi through the Buffon Needle process, but with footballs.</p>
-        <a href="https://pcox44.github.io/buffon" class="btn" target="_blank">Open Project</a>
+        <a href="https://pcox44.github.io/buffon" target="_blank"><h3>Buffon's Needle</h3></a>
+        <p>Estimate π using a needle-drop simulation with footballs.</p>
       </div>
       <div class="card">
-        <h3>Math Dance</h3>
-        <p>Demonstration to show how mapping numbers shows beautiful patterns.</p>
-        <a href="https://pcox44.github.io/mathdance" class="btn" target="_blank">Open Project</a>
+        <a href="https://pcox44.github.io/mathdance" target="_blank"><h3>Math Dance</h3></a>
+        <p>Visualize number mappings as beautiful animated patterns.</p>
       </div>
       <div class="card">
-        <h3>Coloring Patterns with Numbers</h3>
-        <p>Colors the screen based on number properties selected.</p>
-        <a href="https://pcox44.github.io/colors" class="btn" target="_blank">Open Project</a>
+        <a href="https://pcox44.github.io/colors" target="_blank"><h3>Coloring Patterns with Numbers</h3></a>
+        <p>Color the screen based on properties of numbers you select.</p>
       </div>
     </section>
   </main>
