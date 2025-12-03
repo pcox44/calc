@@ -4,13 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AP Calculus BC</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     /* ---------- Base Styles ---------- */
     body {
       font-family: 'Poppins', sans-serif;
       line-height: 1.6;
-      background-color: #fdf6f0;
+      background-color: #f0f7ff; /* light blue background */
       color: #000;
       margin: 0;
       padding: 0;
@@ -27,6 +26,7 @@
       font-size: 2.5rem;
       text-align: center;
       margin-bottom: 1rem;
+      color: #1565c0; /* blue header */
     }
 
     nav ul {
@@ -40,13 +40,18 @@
 
     nav a {
       text-decoration: none;
-      color: #000;
+      color: #1565c0; /* blue links */
       font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     h2 {
       margin-top: 2rem;
       margin-bottom: 1rem;
+      color: #1565c0; /* blue section headers */
     }
 
     table {
@@ -56,14 +61,23 @@
     }
 
     th, td {
-      border: 2px solid #000;
+      border: 2px solid #1565c0; /* blue table borders */
       padding: 0.5rem;
       text-align: left;
     }
 
     th {
-      background-color: #eee;
+      background-color: #cce4ff; /* light blue header background */
       font-weight: 700;
+      color: #0d47a1; /* dark blue text */
+    }
+
+    a {
+      color: #1565c0;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     /* ---------- Responsive Styles ---------- */
@@ -106,7 +120,19 @@
     }
   </style>
 </head>
+<body>
   <header>
+    <div class="container">
+      <h1>AP Calculus BC</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ab.html">AP Calculus AB</a></li>
+          <li><a href="bc.html">AP Calculus BC</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
     <div class="container">
       <h1>AP Calculus BC</h1>
       <nav>
